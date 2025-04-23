@@ -1,11 +1,11 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
-import MenuBar from './components/MenuBar'; 
-import Login from './components/Login';
-import Register from './components/Register';
-import History from './components/History';
-import Logout from './components/Logout';
+import MenuBar from './components/common/MenuBar'; 
+import Login from './components/auth/Login/Login';
+import Register from './components/auth/Register/Register';
+import History from './components/history/History';
+import Logout from './components/auth/Logout/Logout';
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem('token'));

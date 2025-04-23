@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { getHistory } from '../api';
+import { getHistory } from '../../api';
 import './History.css';
 
 const History = () => {
