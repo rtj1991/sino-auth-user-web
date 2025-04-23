@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import './index.css';
-import MenuBar from './components/MenuBar'; // changed from Sidebar to MenuBar
+import MenuBar from './components/MenuBar'; 
 import Login from './components/Login';
 import Register from './components/Register';
 import History from './components/History';
@@ -28,7 +28,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <MenuBar isLoggedIn={!!token} /> {/* Pass token info to MenuBar */}
+        <MenuBar isLoggedIn={!!token} /> 
         <Routes>
           <Route path="/register" element={<Register />} />
           <Route
